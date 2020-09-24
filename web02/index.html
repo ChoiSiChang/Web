@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>관광 명소들 20143242 최시창</title>
+	<!--<link rel="stylesheet" href="myCSS.css"> 외부 스타일시트 적용-->
+	<style>
+		*{ /*선택자 all*/
+			margin: 0;
+			font-family: "맑은 고딕", "Malgun Gothic", sans-serif;
+			/*첫번쨰거 폰트 적용 안되면 다음거 적용 sans-serif : 끝에 돌출되어 있지 않은 글씨체*/
+		}
+		body{
+			width: 950px; /*폭 설정*/
+			background-color: gray;
+			margin: 0px auto; /*해당되는 폭의 가운데로*/
+			color:white; /*글자색 설정*/
+		}
+		a{ /*스타일 형식 {속성:속성값;}*/
+			text-decoration: none;
+		}
+		
+		.navi a{color:white;} /*. 클래스, 공백 : 자손*/
+		#page{/*. #: id 이거는 유니크 해야함*/
+			background-color: #252525;
+			maring: 40px 0px;
+			border-radius: 20px ;/*둥근 테두리*/
+			padding : 20px;
+		}/*외부파일 확장자 CSS*/
+		/*.box{
+			width: 100px;
+			height: 50px;
+			margin: 20px 30px;
+			padding: 10px;
+			background : orange;
+			display: inline-block; 그냥 인라인 으로 변경하면 옆으로 가기는 하지만 내용 중심으로 조절되버림 inline-blcok 쓰면 크기에 맞추는 블럭형식+인라인 적용가능
+		}
+		/*.v{
+			width: 100px;
+			height: 50px;
+			background-color: blue;
+			display: block; 밑으로 쭉가는 크기중심 블럭형식 적용
+		}*/
+		.navi>ul>li:hover{ /*>:자식 :hover(상태); navi 클래스 밑에 ul밑에 li를 hover하면  상태선택자*/
+			background-color: #47ece5 ;
+		}
+		.navi{
+			list-style: none;
+			margin : 15px 0px;
+			border-top : 1px solid #47ece5; /*solid 실선*/
+			border-bottom:  1px solid #47ece5;
+			height: 60px;
+		}
+		.navi>ul>li{
+			display: inline-block;
+			padding: 5px 50px;
+			line-height: 50px; /*줄간격*/
+		}
+		.main{
+			
+			float:left;
+			max-width:700px; 
+		}
+		.right{
+			line-height: 35px;
+			float:right;
+			max-width:230px;
+		}
+		footer{
+			margin: 40px 0px;
+			padding:20px;
+			clear: both;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+	<header>
+		<h1>추천 여행지</h1>
+	</header>
+	<!--.box*5{$$} .은 클래스 div 생략가능 div.box해도됨 {}는 텍스트 $$는 숫자-->
+		<!--<div class="box">01</div>
+		<div class="box">02</div>
+		<div class="box">03</div>
+		<div class="box">04</div>
+		<div class="box">05</div>-->
+		<!-- tag 출력형식 변경 display : inline, block, inline-block-->
+		<!-- display -> div는 블럭형식 span은 인라인[한줄] 형식 -->
+		<!--<span class="v">span1</span>
+		<span class="v">span2</span>
+		<span class="v">span3</span>-->
+	<nav>
+		<div class="navi">
+			<ul>
+				<li><a href="sub_01.html">홈화면</a></li>
+				<li><a href="sub_02.html">유럽 여행지</a></li>
+				<li><a href="sub_03.html">북미 여행지</a></li>
+				<li><a href="sub_04.html">아시아 여행지</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+	<section class="main">	
+		<article>
+			<h3 style="color: white; font-size:35px;">오늘의 추천 명소들</h3><!--인라인 사용-->
+			<br>
+			<img src="../images/europa.jpg" withe=200 height="200" alt="">
+			<img src="../images/europa2.jpg" withe=200 height="200" alt="">
+			<br><br><hr><br>
+			<img src="../images/europa3.jpg" withe=220 height="200" alt="">
+			<img src="../images/europa4.jpg" withe=200 height="200" alt="">
+		</article>
+		<article >
+			<br>
+			<h3>오늘의 명소 정보</h3>
+			<ol type="I">
+				<li>프랑스-베르사유 궁전</li>
+				<li>프랑스-에펠탑</li>
+				<li>프랑스-루브르 박물관</li>
+				<li>이탈리아-콜로세움</li>
+			</ol>
+		</article>
+	</section>
+	<aside class="right">
+		<h3> Login</h3>
+		<form action="#" method="post"> <!--입력양식 form단위 디폴트는 GET방식 -->
+			ID : <input type="text" name="id"><br><!--name변수에 사용자 입력값 저장 --> 
+			암호 : <input type="password" name="pwd"><br>
+			<input type="checkbox" value="h1" name="Login">ID 저장</input>
+			<input type="checkbox" value="h2" name="Login">자동 로그인</input>
+			<input type="submit" value="로그인"><!--value submit 버튼에 표시될내용 버튼 누르면 action에 지정된 jsp로 값과 제어 넘김-->
+			<input type="reset" value="취소"><br>
+		</form>
+	</aside>
+	<footer>
+		20143242 최시창
+	</footer>
+</div>
+</body>
+</html>
