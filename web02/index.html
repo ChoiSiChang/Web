@@ -193,13 +193,13 @@
 	</section>
 	<aside class="right">
 		<h3> Login</h3>
-		<form action="#" method="post"> <!--입력양식 form단위 디폴트는 GET방식 -->
-			ID : <input type="text" name="id"><br><!--name변수에 사용자 입력값 저장 --> 
-			암호 : <input type="password" name="pwd"><br>
-			<input type="checkbox" value="h1" name="Login">ID 저장</input>
-			<input type="checkbox" value="h2" name="Login">자동 로그인</input>
-			<input type="submit" value="로그인"><!--value submit 버튼에 표시될내용 버튼 누르면 action에 지정된 jsp로 값과 제어 넘김-->
-			<input type="reset" value="취소"><br>
+		<form action="#" method="post" class="w3-container"> <!--입력양식 form단위 디폴트는 GET방식 -->
+		    아이디  :<input class="w3-input" type="text" name="id"/> <br />
+            패스워드:<input class="w3-input" type="password" name="pass"/> <br />
+            <input class="w3-button w3-indigo" type="submit" value="로그인" />
+            <input class="w3-button w3-indigo" type="reset" value="초기화" /><br />
+            <a href="register.html" target="_blank" id="register">회원가입</a>
+            <a href="#" id="forgot">비밀번호분실</a>
 			<hr><br>
 			오늘의 추천 음악
 			<audio style="width: 80%" src="../media/엘나스브금.mp3" controls="true" autoplay="true" withe=50></audio>
