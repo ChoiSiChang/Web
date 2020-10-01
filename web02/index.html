@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<title>관광 명소들 20143242 최시창</title>
 	<!--<link rel="stylesheet" href="myCSS.css"> 외부 스타일시트 적용-->
 	<style>
@@ -65,7 +66,7 @@
 		.main{
 			
 			float:left;
-			max-width:700px; 
+			max-width:650px; 
 		}
 		.right{
 			line-height: 35px;
@@ -98,26 +99,79 @@
 		<span class="v">span2</span>
 		<span class="v">span3</span>-->
 	<nav>
-		<div class="navi">
-			<ul>
-				<li><a href="sub_01.html">홈화면</a></li>
-				<li><a href="sub_02.html">유럽 여행지</a></li>
-				<li><a href="sub_03.html">북미 여행지</a></li>
-				<li><a href="sub_04.html">아시아 여행지</a></li>
-				
-			</ul>
-		</div>
+		<div class="navi w3-bar w3-indigo">
+				<ul>
+					<li class="w3-bar-item w3-button"><a href="sub01.html">유럽여행지</a></li>
+					<li class="w3-bar-item w3-button"><a href="sub02.html">아시아여행지</a></li>
+					<li class="w3-bar-item w3-button"><a href="sub03.html">아메리카 여행지</a></li>
+					<li class="w3-bar-item w3-button"><a href="sub04.html">오세아니아 여행지</a></li>
+					<li class="w3-bar-item w3-button"><a href="sub05.html">여행 후기</a></li>
+				</ul>
+		</div>	
 	</nav>
 	<section class="main">	
 
 		<article>
-			<h3 style="color: white; font-size:35px;">오늘의 추천 명소들</h3><!--인라인 사용-->
-			<br>
-			<img src="../images/europa.jpg" withe=200 height="200" alt="">
-			<img src="../images/europa2.jpg" withe=200 height="200" alt="">
-			<br><br><hr><br>
-			<img src="../images/europa3.jpg" withe=220 height="200" alt="">
-			<img src="../images/europa4.jpg" withe=200 height="200" alt="">
+		<div class="w3-container w3-teal">
+		  	<h1>오늘의 추천 명소들</h1>
+		  	<div class="w3-row-padding w3-margin-top">
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa.jpg" style="width:100% " >
+				      <div class="w3-container">
+				        <h5>베르사유 궁전</h5>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa2.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h5>에펠탑</h5>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa3.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h5>루브르 박물관</h5>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+
+			<div class="w3-row-padding w3-margin-top">
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa4.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h5>콜로세움</h5>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa5.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h5>부라노섬</h5>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="w3-third">
+				    <div class="w3-card">
+				      <img src="../images/europa6.jpg" style="width:100%">
+				      <div class="w3-container">
+				        <h5>노이슈반슈타인성</h5>
+				      </div>
+				    </div>
+				  </div>
+			</div>
+		</div>
 		</article>
 		<article >
 			<br>
@@ -127,6 +181,8 @@
 				<li>프랑스-에펠탑</li>
 				<li>프랑스-루브르 박물관</li>
 				<li>이탈리아-콜로세움</li>
+				<li>베네치아-부라노섬</li>
+				<li>독일-노이슈반슈타인성</li>
 			</ol>
 		</article>
 	</section>
@@ -144,7 +200,7 @@
 			<audio style="width: 80%" src="../media/엘나스브금.mp3" controls="true" autoplay="true" withe=50></audio>
 		</form>
 	</aside>
-	<footer >
+	<footer class="w3-container w3-dark-gray w3-padding w3-margin-top" >
 		20143242 최시창
 	</footer>
 </div>
