@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script>
+		let tel = "1234-345"; // 전역변수 (스크립트 전체)
+		{	
+			// let(ES6) , var(ES6 이전) 변수 선언 
+			age = 25; // 값 할당
+			var age; // 변수 선언 
+			// 순서가 바껴도 된다 안좋음 
+			console.log(age);
+			console.log("전역1 =>"+tel);
+		}
+		{
+			let name; // 지역변수 (블럭내에서만 유효)
+			name="홍길동";
+			console.log("블럭 =>"+name);
+			// let은 순서 바뀌면 안됨
+			console.log("전역 =>"+tel);
+		}
+		console.log("값 =>"+ name);
+		console.log("전역2 =>"+tel);
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

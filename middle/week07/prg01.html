@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연산자 연습 </title>
+	<script>
+		// 전체 스크립트 전체에 영향을 주는거 전역변수
+		let x, y; //전역변수
+		//산술연산자 ... 대입연산자[마지막]
+		//연산자 종류 -> 산술연산자 +,-,*,/,%,++,-- 2.비교연산자 != 같지 않다 3.논리연산자 || or, && and, | not  
+		function calc(){
+			// 메소드 안에서 변수를 선언하면 지역변수 var도 함수 안에서 하면 지역변수 메소드안에서만 유효 
+			let sum;//지역변수
+			x = parseInt(document.getElementById("x").value); // 해당 id의 값을 스트링으로 가져옴 숫자로 할려면 형변환 해야함 
+			y = parseInt(document.getElementById("y").value);
+			sum = x+y;
+			document.getElementById("sum").value = sum; // 거꾸로 value에 넣어줌 
+			// 해당하는 id를 가르키는거 getElementById()  , 값은 여기에 value 붙인거 
+			// 마찬가지로 getElementByClass 하면됨 
+			//document.write(eval("1+2"));
+		}
+		function calc_01(){
+			let result = x+y; 
+			console.log("+" + result);
+			result = x*y; 
+			console.log("*"+ result);
+			result = x%y; // 나머지 
+			console.log("%" + result);
+			result = ++x + y++;
+			console.log(result); // ++x 는 먼저 x값 증가한후 계산 , x++ 는 계산한후 x값 증가 
+			/*
+			a=a+1; -> ++a
+			값 계산 
+
+			값 계산
+			a=a+1 이런거 ㅇㅇ -> a++ 
+			대소문자 구분 두번쨰 문자부터 첫글자 대문자 
+			
+			조건연산자 삼항연산자 : 조건식? 참일떄 실행 : 거짓일때 실행 
+			typeof 연산자 -> 데이터유형체크 
+			*/  
+
+		}
+	</script>
+</head>
+<body>
+	<h3> 계산기 </h3>
+	<form action="#">
+		첫번쨰 정수 : <input type="text" id="x"><br> <!--id 식별값 이 input의 값을 x로 정함 id x인 값을 가져와서 변수에 넣어주기 가능 -->
+		두번쨰 정수 : <input type="text" id="y"><br>
+		합계 : <input type="text" id="sum"><br>
+		<input type="button" value="계산" onclick="calc();">
+	</form>
+		<br>
+		<input type="button" value="계산1" onclick="calc_01();">
+</body>
+</html>
